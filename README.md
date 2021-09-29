@@ -27,3 +27,8 @@ This research performs enormous experiments to explore these research questions 
 4. Improved Accuracy of CNN models using Data Augmentation
 5. Used DenseNet121 to improve accuracy of the model
 6. Using Best Machine Learning model from my experiments in real world application  
+
+# Robotic Process Automation 
+
+1. Complete Understanding of UIPath tool to design any kinds of Robots for Automation
+2. Learn to Automate - (Web, PDF, Excel, Text, Database, File System) using UIPath Activites.

@@ -32,3 +32,7 @@ This research performs enormous experiments to explore these research questions 
 
 1. Complete Understanding of UIPath tool to design any kinds of Robots for Automation
 2. Learn to Automate - (Web, PDF, Excel, Text, Database, File System) using UIPath Activites.
+
+# Selenium
+
+1. Data Driven framework with Extent Report

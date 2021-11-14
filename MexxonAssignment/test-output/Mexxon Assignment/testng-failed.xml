@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mexxon Assignment]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.mexx.testcases.UiTap">
+        <methods>
+          <include name="scrollBars"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="classAttribute"/>
+          <include name="dynamicTable"/>
+        </methods>
+      </class> <!-- com.mexx.testcases.UiTap -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Mexxon Assignment] -->

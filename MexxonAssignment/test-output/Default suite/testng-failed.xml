@@ -5,9 +5,9 @@
     <classes>
       <class name="com.mexx.testcases.UiTap">
         <methods>
+          <include name="hiddenLayer"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="progressBar"/>
         </methods>
       </class> <!-- com.mexx.testcases.UiTap -->
     </classes>

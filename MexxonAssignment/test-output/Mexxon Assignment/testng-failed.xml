@@ -5,10 +5,15 @@
     <classes>
       <class name="com.mexx.testcases.UiTap">
         <methods>
+          <include name="ajaxData"/>
           <include name="scrollBars"/>
+          <include name="hiddenLayer"/>
+          <include name="visibility"/>
+          <include name="nonBreakingSpace"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="classAttribute"/>
+          <include name="progressBar"/>
           <include name="dynamicTable"/>
         </methods>
       </class> <!-- com.mexx.testcases.UiTap -->

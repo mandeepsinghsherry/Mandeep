@@ -47,23 +47,26 @@ public class UiTap extends TestBase {
 
 	}
 
-//	@Test
-//	public void hiddenLayer() {
-//		
-//		
-//		driver.findElement(By.xpath(OR.getProperty("hdnLyr"))).click();
-//		
-//		// identify element and click
-//		
-//	
-//		
-//		
-//		driver.findElement(By.xpath(OR.getProperty("grnbtn"))).click();
-//		
-//		driver.findElement(By.xpath(OR.getProperty("grnbtn"))).;
-//	      
+	@Test
+	public void hiddenLayer() {
+		driver.findElement(By.xpath(OR.getProperty("hdnLyr"))).click();
 
-	// }
+		// identify element and click
+
+		String grnbutton = driver.findElement(By.xpath(OR.getProperty("grnbtn"))).getAttribute("id");
+		// click on green button
+		driver.findElement(By.xpath(OR.getProperty("grnbtn"))).click();
+		System.out.println("Green Button Clicked");
+
+		String blubutton = driver.findElement(By.xpath(OR.getProperty("blubtn"))).getAttribute("id");
+		// click on blue button
+		driver.findElement(By.xpath(OR.getProperty("blubtn"))).click();
+		System.out.println("Blue Button Clicked");
+		// validating the result by two id's should not be same after clicking the
+		// buttons
+		Assert.assertNotEquals(grnbutton, blubutton);
+
+	}
 
 	@Test
 	public void ajaxData() {
@@ -78,8 +81,7 @@ public class UiTap extends TestBase {
 
 		wait.until(ExpectedConditions.visibilityOf(TextElement));
 		String textAfter = TextElement.getText().trim();
-		// System.out.println(textAfter);
-
+		// validating the test case by comparing the strings
 		Assert.assertEquals(textAfter, "Data loaded with AJAX get request.");
 	}
 
@@ -90,7 +92,8 @@ public class UiTap extends TestBase {
 
 		try {
 			WebElement element = driver.findElement(By.id("hidingButton"));
-			Actions actions = new Actions(driver);
+			// Action class to automatically scroll and find the element.
+			Actions actions = new Actions(driver); 
 			actions.moveToElement(element);
 			actions.perform();
 			Assert.assertNotNull(element);
@@ -108,6 +111,7 @@ public class UiTap extends TestBase {
 		driver.findElement(By.xpath(OR.getProperty("dyntbl"))).click();
 
 		String cpuTableValue = null;
+		// webelement of tables in to a list
 		List<WebElement> we = driver.findElements(By.xpath(OR.getProperty("tbltsk")));
 		String[] webElementList = we.get(0).getText().split("\n");
 
@@ -116,6 +120,7 @@ public class UiTap extends TestBase {
 			if (w.contains("Chrome")) {
 
 				String str = w;
+				//splitting the list to find the values
 				cpuTableValue = getSplittedValues(str);
 				System.out.println("Chrome CPU value from Table:" + cpuTableValue);
 
@@ -149,7 +154,7 @@ public class UiTap extends TestBase {
 	public void progressBar() throws InterruptedException {
 		String percentage = null;
 		driver.findElement(By.xpath(OR.getProperty("prgbar"))).click();
-
+        // Adding waits
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		WebElement progressbar = driver.findElement(By.cssSelector("#progressBar"));
 		String s = progressbar.getAttribute("aria-valuenow");
@@ -159,7 +164,7 @@ public class UiTap extends TestBase {
 
 		while (true) {
 
-			 percentage = driver.findElement(By.cssSelector("#progressBar")).getAttribute("aria-valuenow");
+			percentage = driver.findElement(By.cssSelector("#progressBar")).getAttribute("aria-valuenow");
 			if (percentage.equals("75")) {
 				System.out.println("reached on 75 sucess");
 				driver.findElement(By.xpath(OR.getProperty("stpbtn"))).click();
@@ -177,29 +182,29 @@ public class UiTap extends TestBase {
 
 		String result = driver.findElement(By.xpath("//p[@id='result']")).getText();
 		System.out.println(result);
-		int spltresult= Integer.parseInt(getSplittedResult(result)); 
-		if(Integer.parseInt(percentage)>=75) {
-			Assert.assertTrue(spltresult>=0);
-		}else {
+		int spltresult = Integer.parseInt(getSplittedResult(result));
+		if (Integer.parseInt(percentage) >= 75) {
+			Assert.assertTrue(spltresult >= 0);
+		} else {
 			Assert.fail();
 		}
 
 	}
 
 	// Function for slippting the string and get the value
-		String getSplittedResult(String str) {
-			String[] splited = str.split("\\s+");
-			String cpuValue = null;
-			for (String element : splited) {
-				if (element.contains(",")) {
+	String getSplittedResult(String str) {
+		String[] splited = str.split("\\s+");
+		String cpuValue = null;
+		for (String element : splited) {
+			if (element.contains(",")) {
 
-					cpuValue = element.replace(",", "");
-				}
+				cpuValue = element.replace(",", "");
 			}
-			return cpuValue;
-
 		}
-	
+		return cpuValue;
+
+	}
+
 ////Function for slippting the string and get the value
 //	String getSplittedResult(String str) {
 //		str = str.substring(str.indexOf("\t") + 1);

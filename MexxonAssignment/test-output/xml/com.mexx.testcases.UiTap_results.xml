@@ -4,17 +4,17 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="70,909">
+           time="63,581">
   <properties />
   
   
-            <testcase name="ajaxData" time="15,687" classname="com.mexx.testcases.UiTap" />
-                <testcase name="dynamicTable" time="0,549" classname="com.mexx.testcases.UiTap" />
-                <testcase name="classAttribute" time="6,604" classname="com.mexx.testcases.UiTap" />
-                <testcase name="scrollBars" time="0,545" classname="com.mexx.testcases.UiTap" />
-                <testcase name="progressBar" time="25,497" classname="com.mexx.testcases.UiTap" />
-                <testcase name="hiddenLayer" time="0,633" classname="com.mexx.testcases.UiTap" />
-                <testcase name="nonBreakingSpace" time="10,566" classname="com.mexx.testcases.UiTap" />
-                <testcase name="visibility" time="10,828" classname="com.mexx.testcases.UiTap" />
+            <testcase name="scrollBars" time="0,652" classname="com.mexx.testcases.UiTap" />
+                <testcase name="ajaxData" time="16,089" classname="com.mexx.testcases.UiTap" />
+                <testcase name="visibility" time="10,880" classname="com.mexx.testcases.UiTap" />
+                <testcase name="dynamicTable" time="0,579" classname="com.mexx.testcases.UiTap" />
+                <testcase name="classAttribute" time="6,552" classname="com.mexx.testcases.UiTap" />
+                <testcase name="hiddenLayer" time="0,589" classname="com.mexx.testcases.UiTap" />
+                <testcase name="nonBreakingSpace" time="10,464" classname="com.mexx.testcases.UiTap" />
+                <testcase name="progressBar" time="17,776" classname="com.mexx.testcases.UiTap" />
       
 </testsuite>

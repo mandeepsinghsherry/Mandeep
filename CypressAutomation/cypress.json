@@ -1,0 +1,17 @@
+{
+    "projectId": "eonkrc",
+    "reporter": "mochawesome",
+
+    "defaultCommandTimeout":10000,
+     "env" :
+{
+
+    "url" : "https://rahulshettyacademy.com/angularpractice/"
+},
+
+
+
+    "testFiles": "**/*.feature"
+ 
+
+}

@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-27T18:04:27.701Z",
+    "end": "2022-01-27T18:04:41.481Z",
+    "duration": 13780,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f827f752-740c-43bc-9abe-ee8641f2533b",
+      "title": "",
+      "fullFile": "cypress/integration/example/BDD/ecommerce.feature",
+      "file": "cypress/integration/example/BDD/ecommerce.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fbfc9313-3b4e-40db-b37d-9ecb12e1c165",
+          "title": "End to End Ecommerce validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ecommerce Products delivery",
+              "fullTitle": "End to End Ecommerce validation Ecommerce Products delivery",
+              "timedOut": null,
+              "duration": 4608,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'data')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'data')\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\example\\BDD\\ecommerce.feature:63:9)\n    at Context.resolveAndRunStepDefinition (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\example\\BDD\\ecommerce.feature:12434:29)\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\example\\BDD\\ecommerce.feature:11755:35)",
+                "diff": null
+              },
+              "uuid": "1f24dc36-ec1d-4758-8321-eebcc09b0ce4",
+              "parentUUID": "fbfc9313-3b4e-40db-b37d-9ecb12e1c165",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1f24dc36-ec1d-4758-8321-eebcc09b0ce4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4608,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}

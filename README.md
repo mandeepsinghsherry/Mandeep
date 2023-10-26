@@ -36,3 +36,6 @@ This research performs enormous experiments to explore these research questions 
 # Selenium
 
 1. Data Driven framework with Extent Report
+
+# Demo_Automation 
+1. It is playwright automation framework with some testcases

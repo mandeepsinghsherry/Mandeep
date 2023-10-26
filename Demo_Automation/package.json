@@ -1,0 +1,21 @@
+{
+  "name": "demo_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "webtests": "npx playwright test --grep @web"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "@types/node": "^20.8.2",
+    "allure-playwright": "^2.9.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.0.0"
+  }
+}

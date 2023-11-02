@@ -39,3 +39,63 @@ This research performs enormous experiments to explore these research questions 
 
 # Demo_Automation 
 1. It is playwright automation framework with some testcases
+
+# Azure-AKS
+1.  Working on Azure Kubernetes Servies
+2.	Create Azure AKS Cluster using Azure Portal
+3.	Docker Fundamentals
+4.	Imperative Method: Kubernetes Fundamentals using kubectl
+5.	Declarative Method: Kubernetes Fundamentals using YAML
+6.	Azure Disks for AKS Storage
+7.	Custom Storage Class, PVC, and PV
+8.	AKS default Storage class, PVC and PV
+9.	User Management Web Application Deployment with MySQL as storage using Storage Class, PVC, and PV
+10.	Azure MySQL for AKS Storage
+11.	Kubernetes Secrets
+12.	Azure Files for AKS Storage
+13.	Ingress Basics
+14.	Ingress Context path based Routing
+15.	Azure DNS Zones - Delegate domain from AWS to Azure
+16.	Ingress and External DNS with Azure DNS Zones
+17.	Ingress Domain Name based Routing with External DNS
+18.	Ingress SSL with LetsEncrypt
+19.	Kubernetes Requests & Limits
+20.	Kubernetes Namespaces
+21.	Kubernetes Namespaces - Imperative
+22.	Kubernetes Namespaces - Limit Range
+23.	Kubernetes Namespaces - Resource Quota
+24.	Azure Virtual Nodes for AKS
+25.	Azure Virtual Nodes Basics
+26.	Azure AKS Virtual Nodes Mixed Mode Deployments
+27.	Azure Container Registry for AKS
+28.	Integrate Azure Container Registry ACR with AKS
+29.	Azure AKS Pull Docker Images from ACR using Service Principal
+30.	Pull Docker Images from ACR using Service Principal and Run on Azure Virtual Nodes
+31.	Azure DevOps with AKS Cluster
+32.	Azure DevOps - Build and Push Docker Image to Azure Container Registry
+33.	Azure DevOps - Build, Push to ACR and Deploy to AKS
+34.	Azure DevOps - Create Starter Pipeline
+35.	Azure DevOps - Release Pipelines
+36.	Azure AKS - Enable HTTP Application Routing AddOn
+37.	Azure AKS Authentication with Azure AD and Kubernetes RBAC
+38.	Azure AKS Cluster Access with Multiple Clusters
+39.	Azure AD Integration with Azure AKS for Authentication
+40.	Kubernetes RBAC Role & Role Binding with Azure AD on AKS
+41.	Kubernetes RBAC Cluster Role & Role Binding with AD on AKS
+42.	Azure AKS Cluster Autoscaling
+43.	Azure AKS - Cluster Autoscaler
+44.	Azure AKS - Horizontal Pod Autoscaler HPA
+45.	Azure AKS Production Grade Cluster Design using AZ AKS CLI
+46.	Create Azure AKS Cluster using AZ AKS CLI
+47.	Create Azure AKS Linux, Windows, and Virtual Node Pools
+48.	Deploy Apps to Azure AKS Linux, Windows, and Virtual Node Pools
+49.	Provision Azure AKS Clusters using Terraform
+50.	Terraform Command Basics
+51.	Terraform Language Basics
+52.	Provision AKS Cluster using Terraform
+53.	Create AKS Cluster Linux and Windows Node Pools
+54.	Create an Azure AKS Cluster using Custom Virtual Network
+55.	Provision Azure AKS using Terraform & Azure DevOps
+
+
+

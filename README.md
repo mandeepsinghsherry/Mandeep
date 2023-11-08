@@ -40,6 +40,10 @@ This research performs enormous experiments to explore these research questions 
 # Demo_Automation 
 1. It is playwright automation framework with some testcases
 
+# Docker Engine
+1. Setup Docker repositories in Docker hub
+2. Build and Push Docker images
+
 # Azure-AKS
 1.  Working on Azure Kubernetes Servies
 2.	Create Azure AKS Cluster using Azure Portal

@@ -39,6 +39,8 @@ terraform {
 
 # 2. Terraform Provider Block for AzureRM
 provider "azurerm" {
+
+   skip_provider_registration = "true"
   features {
     # Updated as part of June2023 to delete "ContainerInsights Resources" when deleting the Resource Group
     resource_group {

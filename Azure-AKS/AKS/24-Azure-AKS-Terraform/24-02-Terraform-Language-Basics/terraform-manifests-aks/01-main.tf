@@ -38,6 +38,8 @@ terraform {
 
 # 2. Terraform Provider Block for AzureRM
 provider "azurerm" {
+
+  skip_provider_registration = "true"
   features {
 
   }

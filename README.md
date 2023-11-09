@@ -1,4 +1,4 @@
-# 360 Interview Task
+# 360 Practise Task
 I have implemented TestNG Testcases for testing functionality of TelephoneDialPad in Task code. 
 
 Please find the link for the 360Assignment.zip file which contains code and the attached TestCasesForTelephoneDailPad.xlsx file for manual test cases.
